@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:text="SAVE"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/txt_title"
+                android:layout_height="40dp"
+                android:hint="judul"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@null"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txt_note"
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                android:gravity="top|start"
+                android:textSize="12sp"
+                android:hint="tuliskan catatanmu disini.."
+                android:background="@null"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
